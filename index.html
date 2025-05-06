@@ -1,50 +1,90 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Benvenuto!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Michele - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
       color: white;
       text-align: center;
-      padding: 50px;
+    }
+
+    header {
+      padding: 100px 20px 50px;
     }
 
     h1 {
       font-size: 3em;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     p {
-      font-size: 1.5em;
+      font-size: 1.2em;
+      color: #e0e0e0;
     }
 
-    .button {
+    .buttons {
+      margin-top: 40px;
+    }
+
+    .buttons a {
       display: inline-block;
-      margin-top: 30px;
-      padding: 15px 25px;
-      font-size: 1em;
-      color: #4facfe;
+      margin: 10px;
+      padding: 15px 30px;
       background-color: white;
-      border: none;
+      color: #1f1c2c;
+      font-weight: 600;
       border-radius: 8px;
       text-decoration: none;
-      transition: 0.3s;
+      transition: all 0.3s ease;
     }
 
-    .button:hover {
+    .buttons a:hover {
       background-color: #e0e0e0;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 60px 20px;
+      background-color: #2c2c3c;
+    }
+
+    footer {
+      padding: 30px 20px;
+      font-size: 0.9em;
+      color: #cccccc;
     }
   </style>
 </head>
 <body>
 
-  <h1>Benvenuto nel mio sito!</h1>
-  <p>Questa è la mia landing page su GitHub Pages.</p>
-  <a href="https://github.com/michele55" class="button">Visita il mio GitHub</a>
+  <header data-aos="fade-down">
+    <h1>Ciao, sono Michele 👋</h1>
+    <p>Sviluppatore full-stack | Creatore del Sistema di Ticketing</p>
+    <div class="buttons">
+      <a href="https://github.com/michele55/Sistema_Ticketing" target="_blank">🔧 Progetto Ticketing</a>
+      <a href="https://github.com/michele55" target="_blank">🌐 Il mio GitHub</a>
+    </div>
+  </header>
 
+  <section data-aos="fade-up">
+    <h2>📌 Su di me</h2>
+    <p>Appassionato di sviluppo web, ho realizzato un sistema completo di ticketing durante il mio tirocinio universitario.</p>
+  </section>
+
+  <footer>
+    © 2025 Michele. Tutti i diritti riservati.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
